@@ -1,0 +1,340 @@
+{
+    "name": "tjd-theme1",
+    "author": "tjd",
+    "variables":
+    {
+        "black": "#000000",
+        "black2": "#181818",
+        "black3": "#222218",
+        "blue": "#5f6f7f",
+        "blue2": "#c7d0d9",
+        "blue3": "#80b0df",
+        "cyan": "#46d9d4",
+        "cyan2": "#4fcfcb",
+        "cyan3": "#3fb4c5",
+        "cyan4": "#00a8c6",
+        "cyan5": "#97aaad",
+        "green": "#70bd6a",
+        "grey": "#3b3a32",
+        "grey2": "#403c37",
+        "orange": "#e6b678",
+        "orange2": "#ffbe40",
+        "orange3": "#f7b83d",
+        "orange4": "#d1a341",
+        "orange5": "#9d550f",
+        "orange6": "#e6ad39",
+        "orange7": "#dda430",
+        "orange8": "#ffe792",
+        "purple": "#c78feb",
+        "red": "#ef746f",
+        "red2": "#e61f44",
+        "white": "#ffffff",
+        "white2": "#f8f8f0",
+        "white3": "#f4f7fa",
+        "yellow": "#e6db74",
+        "yellow2": "#b3cc57",
+        "yellow3": "#8fbe00",
+        "yellow4": "#a7da1e",
+        "yellow5": "#c9c9b0",
+        "yellow6": "#a6e22e",
+        "yellow7": "#75715e",
+        "yellow8": "#e9e9a0",
+
+        "background": "#202020",
+        "foreground": "#c9c9b0",
+        "dot-access": "#f0f0e0",
+        "comment": "#808080",
+        "block_caret": "#3040c0"
+    },
+    "globals":
+    {
+        "foreground": "var(foreground)",
+        "background": "var(background)",
+        "caret": "var(white2)",
+        "block_caret": "var(block_caret)",
+        "invisibles": "var(grey)",
+        "line_highlight": "var(grey2)",
+        "selection": "var(yellow2)",
+        "selection_foreground": "var(white)",
+        "selection_border": "var(black3)",
+        "active_guide": "color(var(orange5) alpha(0.69))",
+        "find_highlight_foreground": "var(black)",
+        "find_highlight": "var(orange8)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(red)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(yellow2)",
+        "tags_options": "stippled_underline"
+    },
+    "rules":
+    [
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "var(comment)"
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(blue3)"
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "foreground": "var(red)",
+            "font_style": "bold"
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Variable",
+            "scope": "variable"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "var(orange)"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type",
+            "foreground": "var(orange6)"
+        },
+        {
+            "name": "Class name",
+            "scope": "entity.name.class",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Inherited class",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Function name",
+            "scope": "entity.name.function",
+            "foreground": "var(yellow8)"
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.parameter",
+            "foreground": "var(white3)"
+        },
+        {
+            "name": "Tag name",
+            "scope": "entity.name.tag",
+            "foreground": "var(yellow2)"
+        },
+        {
+            "name": "Tag attribute",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Library function",
+            "scope": "support.function",
+            "foreground": "var(orange4)"
+        },
+        {
+            "name": "Library constant",
+            "scope": "support.constant",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Library class/type",
+            "scope": "support.type, support.class",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Library variable",
+            "scope": "support.other.variable"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "var(white2)",
+            "background": "var(cyan4)"
+        },
+        {
+            "name": "Invalid deprecated",
+            "scope": "invalid.deprecated",
+            "foreground": "var(white2)",
+            "background": "var(cyan4)"
+        },
+        {
+            "name": "JSON String",
+            "scope": "meta.structure.dictionary.json string.quoted.double.json",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "diff.header",
+            "scope": "meta.diff, meta.diff.header",
+            "foreground": "var(yellow7)"
+        },
+        {
+            "name": "diff.deleted",
+            "scope": "markup.deleted",
+            "foreground": "var(cyan4)"
+        },
+        {
+            "name": "diff.inserted",
+            "scope": "markup.inserted",
+            "foreground": "var(yellow6)"
+        },
+        {
+            "name": "diff.changed",
+            "scope": "markup.changed",
+            "foreground": "var(yellow)"
+        },
+        {
+            "scope": "constant.numeric.line-number.find-in-files - match",
+            "foreground": "color(var(yellow3) alpha(0.63))"
+        },
+        {
+            "scope": "entity.name.filename.find-in-files",
+            "foreground": "var(yellow)"
+        },
+        {
+            "scope": "keyword.other",
+            "foreground": "var(blue)"
+        },
+        {
+            "scope": "meta.property-value, support.constant.property-value, constant.other.color",
+            "foreground": "var(purple)"
+        },
+        {
+            "scope": "meta.structure.dictionary.json string.quoted.double.json",
+            "foreground": "var(red)"
+        },
+        {
+            "scope": "meta.structure.dictionary.value.json string.quoted.double.json",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Function argument",
+            "scope": "meta.property-name support.type.property-name",
+            "font_style": "normal"
+        },
+        {
+            "name": "Function argument",
+            "scope": "meta.property-value punctuation.separator.key-value",
+            "foreground": "var(blue2)"
+        },
+        {
+            "name": "Function argument",
+            "scope": "keyword.other.use, keyword.other.function.use, keyword.other.namespace, keyword.other.new, keyword.other.special-method, keyword.other.unit, keyword.other.use-as",
+            "foreground": "var(yellow2)"
+        },
+        {
+            "name": "Function argument",
+            "scope": "meta.use support.class.builtin, meta.other.inherited-class support.class.builtin",
+            "foreground": "var(blue2)",
+            "font_style": "normal"
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.other",
+            "foreground": "var(white3)",
+            "font_style": "normal"
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.other.dot-access",
+            "foreground": "var(dot-access)",
+            "font_style": "normal"
+        },
+        {
+            "name": "Coffeescript Function argument",
+            "scope": "variable.parameter.function.coffee",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Markdown Titles",
+            "scope": "entity.name.section.markdown",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Markdown Title Hash",
+            "scope": "punctuation.definition.heading.markdown",
+            "foreground": "var(cyan3)"
+        },
+        {
+            "name": "Markdown Raw",
+            "scope": "markup.raw.inline.markdown",
+            "foreground": "var(purple)"
+        },
+        {
+            "name": "Markdown bold stars",
+            "scope": "punctuation.definition.bold.markdown, punctuation.definition.italic.markdown",
+            "foreground": "var(cyan3)"
+        },
+        {
+            "name": "Markdown link title braces",
+            "scope": "punctuation.definition.string.begin.markdown, punctuation.definition.string.end.markdown",
+            "foreground": "var(cyan3)"
+        },
+        {
+            "name": "Markdown link braces",
+            "scope": "punctuation.definition.metadata.markdown",
+            "foreground": "var(cyan3)"
+        },
+        {
+            "name": "Markdown link",
+            "scope": "markup.underline.link.markdown, markup.underline.link.image.markdown, meta.image.inline.markdown",
+            "foreground": "var(yellow2)"
+        },
+        {
+            "name": "Markdown bold/italic",
+            "scope": "markup.bold.markdown, markup.italic.markdown",
+            "foreground": "var(yellow2)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Markdown bold/italic",
+            "scope": "markup.italic.markdown"
+        },
+        {
+            "name": "Markdown bold/italic",
+            "scope": "markup.bold.markdown",
+            "font_style": "bold"
+        },
+        {
+            "name": "Markdown pre",
+            "scope": "markup.raw.block.markdown",
+            "foreground": "var(cyan4)"
+        },
+        {
+            "name": "GitGutter deleted",
+            "scope": "markup.deleted.git_gutter",
+            "foreground": "var(red2)"
+        },
+        {
+            "name": "GitGutter inserted",
+            "scope": "markup.inserted.git_gutter",
+            "foreground": "var(yellow4)"
+        },
+        {
+            "name": "GitGutter changed",
+            "scope": "markup.changed.git_gutter",
+            "foreground": "var(orange3)"
+        },
+        {
+            "name": "CSS Class",
+            "scope": "entity.other.attribute-name.class.css",
+            "foreground": "var(orange2)"
+        }
+    ]
+}
