@@ -7,9 +7,9 @@
         "black2": "#181818",
         "black3": "#222218",
         "blue": "#5f6f7f",
-        "blue2": "#c7d0d9",
+        "blue2": "#57a0c9",
         "blue3": "#80b0df",
-        "cyan": "#46d9d4",
+        "cyan": "#f6d9d4",
         "cyan2": "#4fcfcb",
         "cyan3": "#3fb4c5",
         "cyan4": "#00a8c6",
@@ -17,7 +17,7 @@
         "green": "#70bd6a",
         "grey": "#3b3a32",
         "grey2": "#403c37",
-        "orange": "#e6b678",
+        "orange": "#e39f67",
         "orange2": "#ffbe40",
         "orange3": "#f7b83d",
         "orange4": "#d1a341",
@@ -26,7 +26,6 @@
         "orange7": "#dda430",
         "orange8": "#ffe792",
         "purple": "#c78feb",
-        "red": "#ef746f",
         "red2": "#e61f44",
         "white": "#ffffff",
         "white2": "#f8f8f0",
@@ -36,17 +35,25 @@
         "yellow3": "#8fbe00",
         "yellow4": "#a7da1e",
         "yellow5": "#c9c9b0",
-        "yellow6": "#a6e22e",
+        "yellow6": "#f2cb70",
         "yellow7": "#75715e",
         "yellow8": "#d9c980",
 
-        "background": "#202020",
+        "red": "#ef746f",
+
+        "background": "#1b1c1b",
         "foreground": "#c9c9b0",
         "dot-access": "#f0f0e0",
         "comment": "#808080",
         "block_caret": "#a04040",
         "line_highlight": "#200000",
-        "function_name": "#d9c980"
+        "function_name": "#d9c980",
+        "built_in": "var(yellow6)",
+        "tag_name": "var(function_name)",
+        "string": "#40a050",
+        "storage_type": "#d0a060",
+        "number": "var(blue2)",
+        "escape": "#e090d0",
     },
     "globals":
     {
@@ -80,23 +87,23 @@
         {
             "name": "String",
             "scope": "string",
-            "foreground": "var(green)"
+            "foreground": "var(string)"
         },
         {
             "name": "Number",
             "scope": "constant.numeric",
-            "foreground": "var(blue3)"
+            "foreground": "var(number)"
         },
         {
             "name": "Built-in constant",
             "scope": "constant.language",
-            "foreground": "var(red)",
+            "foreground": "var(built_in)",
             "font_style": "bold"
         },
         {
             "name": "User-defined constant",
             "scope": "constant.character, constant.other",
-            "foreground": "var(cyan)"
+            "foreground": "var(escape)"
         },
         {
             "name": "Variable",
@@ -110,12 +117,12 @@
         {
             "name": "Storage",
             "scope": "storage",
-            "foreground": "var(red)"
+            "foreground": "var(built_in)"
         },
         {
             "name": "Storage type",
             "scope": "storage.type",
-            "foreground": "var(orange6)"
+            "foreground": "var(storage_type)"
         },
         {
             "name": "Class name",
@@ -138,19 +145,24 @@
             "foreground": "var(white3)"
         },
         {
-            "name": "Tag name",
-            "scope": "entity.name.tag",
-            "foreground": "var(yellow2)"
-        },
-        {
             "name": "Tag attribute",
             "scope": "entity.other.attribute-name",
-            "foreground": "var(red)"
+            "foreground": "var(built_in)"
+        },
+        {
+            "name": "Tag name",
+            "scope": "entity.name.tag",
+            "foreground": "var(tag_name)"
         },
         {
             "name": "Library function",
             "scope": "support.function",
             "foreground": "var(orange4)"
+        },
+        {
+            "name": "Tag",
+            "scope": "meta.tag",
+            "foreground": "var(foreground)"
         },
         {
             "name": "Library constant",
@@ -181,7 +193,7 @@
         {
             "name": "JSON String",
             "scope": "meta.structure.dictionary.json string.quoted.double.json",
-            "foreground": "var(purple)"
+            "foreground": "var(black)"
         },
         {
             "name": "diff.header",
@@ -245,7 +257,7 @@
         {
             "name": "Function argument",
             "scope": "meta.use support.class.builtin, meta.other.inherited-class support.class.builtin",
-            "foreground": "var(blue2)",
+            "foreground": "var(black)",
             "font_style": "normal"
         },
         {
