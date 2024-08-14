@@ -54,6 +54,7 @@
         "invisibles": "color(var(white) alpha(0.25))",
         "line_highlight": "var(selection_background)",
         "selection": "var(selection_background)",
+        "selection_foreground": "var(black)",
         "selection_border": "var(selection_background)",
         "misspelling": "var(red)",
         "active_guide": "color(var(struct) alpha(0.69))",
@@ -91,12 +92,12 @@
         {
             "name": "Built-in constant",
             "scope": "constant.language",
-            "foreground": "var(constant)"
+            "foreground": "var(const)"
         },
         {
             "name": "User-defined constant",
             "scope": "constant.character, constant.other",
-            "foreground": "var(constant)"
+            "foreground": "var(const)"
         },
         {
             "name": "Variable",
@@ -104,7 +105,7 @@
         },
         {
             "name": "Keyword",
-            "scope": "keyword - (source.c keyword.operator | source.c++ keyword.operator | source.objc keyword.operator | source.objc++ keyword.operator), keyword.operator.word, source.ruby keyword.declaration",
+            "scope": "keyword - (source.c keyword.operator | source.c++ keyword.operator | source.objc keyword.operator | source.objc++ keyword.operator), source.ruby keyword.declaration",
             "foreground": "var(keyword)"
         },
         {
@@ -134,7 +135,7 @@
         },
         {
             "name": "Inherited class",
-            "scope": "entity.other.inherited-class",
+        "scope": "entity.other.inherited-class",
             "foreground": "var(foreground)",
             "font_style": "italic"
         },
