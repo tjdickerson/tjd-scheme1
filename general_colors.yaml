@@ -1,6 +1,7 @@
 ---
 background: "1b1c1b"
 foreground: "c9c9b0"
+caret: "a04040"
 keyword: "e39f67"
 string: "88b06f"
 number: "80b0df"
@@ -26,3 +27,4 @@ struct_name: "e6ad39"
 method: "e9e9a0"
 instance_field: "e6dfd4"
 instance_property: "e6dfd4"
+
