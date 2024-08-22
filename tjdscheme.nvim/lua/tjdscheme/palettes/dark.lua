@@ -44,5 +44,10 @@ return {
   },
   c = {
     yellow = '#dc8f12',
+    red = '#a04040',
+    green = '#88b06f',
+    cyan = '#88b0df',
+    blue = '#82869c',
+    magenta = '#be8f8f',
   },
 }
