@@ -1,9 +1,9 @@
-<scheme name="tjd-theme1" version="142" parent_scheme="Darcula">
+<scheme name="tjdscheme" version="142" parent_scheme="Darcula">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
-    <property name="ide">GoLand</property>
+    <property name="ide">CLion</property>
     <property name="ideVersion">2024.2.1.0.0</property>
-    <property name="originalScheme">tjd-theme1</property>
+    <property name="originalScheme">tjdscheme</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.2" />
   <option name="EDITOR_FONT_SIZE" value="21" />
@@ -342,7 +342,7 @@
     </option>
     <option name="CTRL_CLICKABLE">
       <value>
-        <option name="FOREGROUND" value="6c95eb" />
+        <option name="FOREGROUND" value="75a9df" />
         <option name="EFFECT_COLOR" value="406ac2" />
       </value>
     </option>
@@ -454,7 +454,7 @@
     </option>
     <option name="DEFAULT_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="d37272" />
+        <option name="FOREGROUND" value="b56464" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -491,12 +491,12 @@
     </option>
     <option name="DEFAULT_FUNCTION_CALL">
       <value>
-        <option name="FOREGROUND" value="e9e9a0" />
+        <option name="FOREGROUND" value="c0c088" />
       </value>
     </option>
     <option name="DEFAULT_FUNCTION_DECLARATION">
       <value>
-        <option name="FOREGROUND" value="e9e9a0" />
+        <option name="FOREGROUND" value="c8bc6e" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -515,12 +515,12 @@
     </option>
     <option name="DEFAULT_INSTANCE_METHOD">
       <value>
-        <option name="FOREGROUND" value="e9e9a0" />
+        <option name="FOREGROUND" value="caca7c" />
       </value>
     </option>
     <option name="DEFAULT_INTERFACE_NAME">
       <value>
-        <option name="FOREGROUND" value="b792df" />
+        <option name="FOREGROUND" value="9781ae" />
       </value>
     </option>
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
@@ -532,7 +532,7 @@
     </option>
     <option name="DEFAULT_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="e39f67" />
+        <option name="FOREGROUND" value="d89a5b" />
       </value>
     </option>
     <option name="DEFAULT_LABEL">
@@ -552,7 +552,7 @@
     </option>
     <option name="DEFAULT_METADATA">
       <value>
-        <option name="FOREGROUND" value="76b2c1" />
+        <option name="FOREGROUND" value="906490" />
       </value>
     </option>
     <option name="DEFAULT_NUMBER">
@@ -577,7 +577,7 @@
     </option>
     <option name="DEFAULT_PREDEFINED_SYMBOL">
       <value>
-        <option name="FOREGROUND" value="ef746f" />
+        <option name="FOREGROUND" value="6f9567" />
       </value>
     </option>
     <option name="DEFAULT_REASSIGNED_LOCAL_VARIABLE">
@@ -599,7 +599,7 @@
     </option>
     <option name="DEFAULT_STATIC_METHOD">
       <value>
-        <option name="FOREGROUND" value="e9e9a0" />
+        <option name="FOREGROUND" value="caca7c" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -733,7 +733,7 @@
     </option>
     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="6c95eb" />
+        <option name="FOREGROUND" value="75a9df" />
         <option name="EFFECT_COLOR" value="406ac2" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
@@ -743,6 +743,17 @@
         <option name="EFFECT_COLOR" value="e8c42f" />
         <option name="ERROR_STRIPE_COLOR" value="e8c42f" />
         <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="GLSL_PREPROCESSOR" baseAttributes="DEFAULT_KEYWORD" />
+    <option name="GO_PACKAGE">
+      <value>
+        <option name="FOREGROUND" value="c1c885" />
+      </value>
+    </option>
+    <option name="GO_TYPE_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="659bab" />
       </value>
     </option>
     <option name="GRID_ERROR_VALUE">
@@ -795,7 +806,7 @@
     <option name="HTML_TAG_NAME" baseAttributes="DEFAULT_KEYWORD" />
     <option name="HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="6c95eb" />
+        <option name="FOREGROUND" value="75a9df" />
         <option name="EFFECT_COLOR" value="406ac2" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
@@ -876,11 +887,7 @@
     </option>
     <option name="JS.GLOBAL_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
     <option name="JS.GLOBAL_VARIABLE" baseAttributes="DEFAULT_GLOBAL_VARIABLE" />
-    <option name="JS.INSTANCE_MEMBER_FUNCTION">
-      <value>
-        <option name="FOREGROUND" value="39cc8f" />
-      </value>
-    </option>
+    <option name="JS.INSTANCE_MEMBER_FUNCTION" baseAttributes="DEFAULT_INSTANCE_METHOD" />
     <option name="JS.LABEL">
       <value>
         <option name="FOREGROUND" value="f0f0f0" />
@@ -921,11 +928,6 @@
     <option name="JS.SEMICOLON">
       <value>
         <option name="FOREGROUND" value="bdbdbd" />
-      </value>
-    </option>
-    <option name="JS.STATIC_MEMBER_FUNCTION">
-      <value>
-        <option name="FOREGROUND" value="39cc8f" />
       </value>
     </option>
     <option name="JS.STATIC_MEMBER_VARIABLE">
@@ -1244,22 +1246,27 @@
     </option>
     <option name="OC.MACRONAME">
       <value>
-        <option name="FOREGROUND" value="90774c" />
+        <option name="FOREGROUND" value="ba549b" />
+      </value>
+    </option>
+    <option name="OC.OVERLOADED_OPERATOR">
+      <value>
+        <option name="FOREGROUND" value="b998b9" />
       </value>
     </option>
     <option name="OC.STRUCT_FIELD">
       <value>
-        <option name="FOREGROUND" value="d9edee" />
+        <option name="FOREGROUND" value="bebea5" />
       </value>
     </option>
     <option name="OC.STRUCT_LIKE">
       <value>
-        <option name="FOREGROUND" value="cbcddc" />
+        <option name="FOREGROUND" value="809ab5" />
       </value>
     </option>
     <option name="OC.TYPEDEF">
       <value>
-        <option name="FOREGROUND" value="57d1ed" />
+        <option name="FOREGROUND" value="d0b87a" />
       </value>
     </option>
     <option name="PROPERTIES.KEY">
@@ -2250,7 +2257,7 @@
       </value>
     </option>
     <option name="XML_TAG_NAME" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="XPATH.KEYWORD" baseAttributes="" />
+    <option name="XPATH.KEYWORD" baseAttributes="DEFAULT_KEYWORD" />
     <option name="YAML_COMMENT">
       <value>
         <option name="FOREGROUND" value="85c46c" />
